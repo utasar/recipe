@@ -13,10 +13,264 @@
     </head>
     <body>
         <div class="mobile-container">
+            <section class="app-header">
+                <div>
+                    <p class="app-eyebrow">Recipe guides + video tutorials</p>
+                    <h1>Recipe Guide Hub</h1>
+                    <p class="app-subtitle">
+                        Meet <strong>Chief</strong>, your friendly Chef AI who
+                        walks beginners through ingredients, timing, and easy
+                        wins in the kitchen. Every guide stays practical, so
+                        you can follow along at home.
+                    </p>
+                </div>
+                <span class="status-pill">Plan only</span>
+            </section>
             <header>
-                <input type="text" id="search-term" />
-                <button id="search"><i class="fas fa-search"></i></button>
+                <input
+                    type="text"
+                    id="search-term"
+                    placeholder="Search meals or ingredients"
+                />
+                <button id="search" aria-label="Search recipes">
+                    <i class="fas fa-search"></i>
+                </button>
             </header>
+            <section class="chef-ai">
+                <h2>Chief&rsquo;s guided cooking plan</h2>
+                <p>
+                    Chief suggests ingredients, step-by-step timing, and
+                    beginner-friendly swaps. Ask for a new dish, or tell Chief
+                    the categories you love.
+                </p>
+                <div class="chip-grid" aria-label="Preferred categories">
+                    <span>Quick dinners</span>
+                    <span>Vegetarian</span>
+                    <span>High protein</span>
+                    <span>Budget meals</span>
+                    <span>One-pot</span>
+                    <span>Kid-friendly</span>
+                </div>
+                <div class="chef-actions">
+                    <div>
+                        <h3>Recipe guides</h3>
+                        <div class="video-grid">
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=4aZr5hZXP_s"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/4aZr5hZXP_s/0.jpg"
+                                    alt="Knife skills for beginners"
+                                />
+                                <span>Knife skills for beginners</span>
+                            </a>
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=1AxLzMJIgxM"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/1AxLzMJIgxM/0.jpg"
+                                    alt="Simple weeknight pasta tutorial"
+                                />
+                                <span>Simple weeknight pasta tutorial</span>
+                            </a>
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=ErpH2gd-1Z8"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/ErpH2gd-1Z8/0.jpg"
+                                    alt="Build a balanced bowl in 10 minutes"
+                                />
+                                <span>Build a balanced bowl in 10 minutes</span>
+                            </a>
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=1msy0O9G1uQ"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/1msy0O9G1uQ/0.jpg"
+                                    alt="Beginner meal prep basics"
+                                />
+                                <span>Beginner meal prep basics</span>
+                            </a>
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=HdNn1l7cQh0"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/HdNn1l7cQh0/0.jpg"
+                                    alt="Quick stir-fry technique"
+                                />
+                                <span>Quick stir-fry technique</span>
+                            </a>
+                            <a
+                                class="video-card"
+                                href="https://www.youtube.com/watch?v=2t2p0M6aX4w"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src="https://img.youtube.com/vi/2t2p0M6aX4w/0.jpg"
+                                    alt="Easy breakfast ideas"
+                                />
+                                <span>Easy breakfast ideas</span>
+                            </a>
+                        </div>
+                        <p class="video-note">
+                            Tap any card to watch the full tutorial on YouTube.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Fitness meal planning</h3>
+                        <p>
+                            Chief can also draft gym-friendly plans with
+                            calorie goals, macros, and grocery lists for the
+                            week.
+                        </p>
+                        <p class="plan-note">
+                            This feature is in planning only and is not yet
+                            executed.
+                        </p>
+                        <div class="plan-grid">
+                            <div>
+                                <h4>What Chief will ask</h4>
+                                <ul>
+                                    <li>Workout schedule + calorie goal</li>
+                                    <li>Diet style and allergies</li>
+                                    <li>Cooking time per day</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>What you get back</h4>
+                                <ul>
+                                    <li>Weekly menu with macros</li>
+                                    <li>Shopping list by aisle</li>
+                                    <li>Batch-cook instructions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps">
+                    <h3>How Chief guides you</h3>
+                    <ol>
+                        <li>Share ingredients, time, and skill level.</li>
+                        <li>Chief suggests a dish or a new idea to try.</li>
+                        <li>
+                            Get a step-by-step plan with timers, swaps, and
+                            plating tips.
+                        </li>
+                    </ol>
+                </div>
+                <div class="chief-form" aria-live="polite">
+                    <div class="chief-form-header">
+                        <div>
+                            <h3>Ask Chief for a guided plan</h3>
+                            <p>
+                                Tell Chief what you have, how much time you
+                                have, and what you want to focus on. Chief will
+                                draft a beginner-friendly plan instantly.
+                            </p>
+                        </div>
+                        <span class="status-pill">Prototype</span>
+                    </div>
+                    <form id="chief-form">
+                        <label class="field">
+                            Choose your goal
+                            <select id="chief-goal" name="goal">
+                                <option value="beginner">
+                                    Beginner cooking guide
+                                </option>
+                                <option value="fitness">
+                                    Gym/Fitness diet plan
+                                </option>
+                            </select>
+                        </label>
+                        <label class="field">
+                            Ingredients you have
+                            <input
+                                id="chief-ingredients"
+                                name="ingredients"
+                                type="text"
+                                placeholder="e.g. chicken, rice, spinach"
+                            />
+                        </label>
+                        <label class="field">
+                            Time available (minutes)
+                            <input
+                                id="chief-time"
+                                name="time"
+                                type="number"
+                                min="5"
+                                max="180"
+                                placeholder="e.g. 25"
+                            />
+                        </label>
+                        <label class="field">
+                            Daily calorie target (fitness only)
+                            <input
+                                id="chief-calories"
+                                name="calories"
+                                type="number"
+                                min="1200"
+                                max="4000"
+                                placeholder="e.g. 2200"
+                            />
+                        </label>
+                        <label class="field">
+                            Preferred categories
+                            <div class="chip-grid selectable" id="chief-tags">
+                                <button type="button" data-tag="Quick dinners">
+                                    Quick dinners
+                                </button>
+                                <button type="button" data-tag="Vegetarian">
+                                    Vegetarian
+                                </button>
+                                <button type="button" data-tag="High protein">
+                                    High protein
+                                </button>
+                                <button type="button" data-tag="Budget meals">
+                                    Budget meals
+                                </button>
+                                <button type="button" data-tag="One-pot">
+                                    One-pot
+                                </button>
+                                <button type="button" data-tag="Kid-friendly">
+                                    Kid-friendly
+                                </button>
+                            </div>
+                        </label>
+                        <button class="primary-btn" type="submit">
+                            Generate Chief guide
+                        </button>
+                    </form>
+                    <div class="chief-output hidden" id="chief-output">
+                        <div class="chief-output-header">
+                            <div>
+                                <p class="chief-eyebrow">Chief&rsquo;s plan</p>
+                                <h4 id="chief-plan-title"></h4>
+                            </div>
+                            <div class="chief-meta" id="chief-meta"></div>
+                        </div>
+                        <ul class="chief-steps" id="chief-steps"></ul>
+                        <button class="secondary-btn" id="chief-reset">
+                            Ask for a new dish
+                        </button>
+                    </div>
+                </div>
+            </section>
             <div class="fav-container">
                 <h3>Favorite Meals</h3>
                 <ul class="fav-meals" id="fav-meals"></ul>

@@ -1,0 +1,8 @@
+:root {
+    color-scheme: light;
+}
+
+body {
+    font-family: "Inter", "Poppins", system-ui, sans-serif;
+    margin: 0;
+}

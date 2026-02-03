@@ -1,1 +1,29 @@
-had to make chances which will have all the recipe guide and tutorials vid links directly on sites again it will have AI name chief which will guide a user to cook with ingredients and time duration everything as beginner and get back the data and make or give guide for new dishess or ask if he want this make categories he or she like make all the think ,if someone who wanna plan so good diet with calories for gym or fitness also this might work for him just make , it just in plan not beeing execute 
+# Chief AI Revolution
+
+This repo now includes a runnable React + Tailwind build for the Chief AI
+experience, plus the original static prototype.
+
+## Run the React app (recommended)
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL printed in the terminal.
+
+## Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Static prototype
+
+The original static prototype still lives at the repo root (`index.html`).
+You can open it directly in a browser or serve it with:
+
+```bash
+python -m http.server 8000
+```
